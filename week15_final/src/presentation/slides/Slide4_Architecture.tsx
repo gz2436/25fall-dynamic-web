@@ -31,34 +31,34 @@ const TECH_STACK = [
 
 export const ArchitectureSlide: React.FC = () => {
     return (
-        <div className="w-full h-full bg-black text-white flex flex-col items-center justify-center relative overflow-hidden">
+        <div className="w-full min-h-full bg-black text-white flex flex-col items-center justify-center relative overflow-hidden py-24 px-4 md:px-12">
             {/* Background Grid - Subtle */}
-            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:40px_40px]" />
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
 
-            {/* Header - Fixed Position */}
-            <div className="absolute top-12 left-0 w-full text-center z-20">
+            {/* Header - Flow Position */}
+            <div className="w-full text-center z-20 mb-12">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}
-                    className="text-6xl font-black uppercase tracking-tighter"
+                    className="text-4xl md:text-6xl font-black uppercase tracking-tighter"
                 >
                     The <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-600">Architecture</span>
                 </motion.h2>
             </div>
 
-            {/* Grid - Compact & Refined */}
-            <div className="grid grid-cols-2 gap-4 max-w-4xl w-full relative z-10">
+            {/* Grid - Responsive */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl w-full relative z-10">
                 {TECH_STACK.map((group, i) => (
                     <motion.div
                         key={group.category}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3 + (i * 0.1) }}
-                        className="group relative border border-white/10 bg-white/[0.02] backdrop-blur-sm p-6 hover:bg-white/[0.04] transition-colors"
+                        className="group relative border border-white/10 bg-white/[0.02] backdrop-blur-sm p-5 md:p-6 hover:bg-white/[0.04] transition-colors"
                     >
                         {/* Card Header */}
-                        <div className="flex justify-between items-center mb-6 border-b border-white/10 pb-3">
+                        <div className="flex justify-between items-center mb-4 md:mb-6 border-b border-white/10 pb-3">
                             <div className="flex items-center gap-3">
                                 <span className="font-mono text-xs text-white/40">{group.id}</span>
                                 <h3 className="text-sm font-bold tracking-widest uppercase">{group.category}</h3>
@@ -73,7 +73,7 @@ export const ArchitectureSlide: React.FC = () => {
                             {group.items.map((item, j) => (
                                 <li
                                     key={item}
-                                    className="font-mono text-[11px] text-gray-500 flex items-center gap-3"
+                                    className="font-mono text-[11px] md:text-xs text-gray-500 flex items-center gap-3"
                                 >
                                     <span className="w-0.5 h-0.5 bg-white rounded-full opacity-40 group-hover:bg-green-500 group-hover:opacity-100 transition-all duration-500" />
                                     <span className="group-hover:text-gray-300 transition-colors">{item}</span>

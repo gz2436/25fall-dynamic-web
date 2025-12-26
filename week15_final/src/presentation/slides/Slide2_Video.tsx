@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const VideoSlide: React.FC = () => {
     return (
-        <div className="w-full h-full flex items-center justify-center">
+        <div className="w-full h-full flex items-center justify-center p-4 md:p-8">
             <motion.div
                 className="relative w-full max-w-6xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl border border-white/10"
                 initial={{ opacity: 0, scale: 0.9 }}

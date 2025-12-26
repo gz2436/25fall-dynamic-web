@@ -45,25 +45,25 @@ export const GlitchSlide: React.FC = () => {
     }, []);
 
     return (
-        <div className="w-full h-full flex flex-col items-center justify-center p-8 relative overflow-hidden bg-black text-white">
-            {/* Header - Fixed Position */}
-            <div className="absolute top-12 left-0 w-full text-center z-20">
+        <div className="w-full min-h-full flex flex-col items-center justify-center p-4 md:p-8 relative overflow-hidden bg-black text-white py-20">
+            {/* Header - Flow Position */}
+            <div className="w-full text-center z-20 mb-12">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}
-                    className="text-6xl font-black uppercase tracking-tighter"
+                    className="text-4xl md:text-6xl font-black uppercase tracking-tighter"
                 >
                     The <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-600">Glitch</span>
                 </motion.h2>
             </div>
 
-            <div className="flex-1 flex flex-col md:flex-row items-center justify-center gap-16 w-full max-w-7xl">
+            <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-16 w-full max-w-7xl">
                 {/* Left: Code Block */}
                 <motion.div
                     initial={{ x: -50, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
-                    className="w-[450px] h-[480px] flex-shrink-0"
+                    className="w-full max-w-[450px] aspect-[450/480] flex-shrink-0"
                 >
                     <div className={`w-full h-full ${theme === 'dark' ? 'bg-[#1e1e1e]' : 'bg-white'} rounded-xl shadow-2xl overflow-hidden flex flex-col font-mono text-xs md:text-sm border ${theme === 'dark' ? 'border-zinc-800' : 'border-zinc-200'}`}>
                         {/* Mac Window Header */}
@@ -74,7 +74,7 @@ export const GlitchSlide: React.FC = () => {
                             <div className="flex-1 text-center opacity-50 text-[10px]">GlitchLogo.tsx</div>
                         </div>
                         {/* Real Code Content */}
-                        <div className="p-6 overflow-auto text-blue-400 leading-relaxed">
+                        <div className="p-6 overflow-auto text-blue-400 leading-relaxed text-left">
                             <span className="text-gray-500">// Source: components/GlitchLogo.tsx</span><br />
                             <span className="text-purple-400">setInterval</span>(() ={'>'} {'{'}<br />
                             <div className="pl-4">
@@ -96,12 +96,12 @@ export const GlitchSlide: React.FC = () => {
                 </motion.div>
 
                 {/* Right: Visual Demo */}
-                <div className="w-[450px] h-[480px] flex-shrink-0 flex flex-col items-center justify-center border border-white/5 rounded-xl bg-black/20 relative overflow-hidden p-8">
+                <div className="w-full max-w-[450px] aspect-[450/480] flex-shrink-0 flex flex-col items-center justify-center border border-white/5 rounded-xl bg-black/20 relative overflow-hidden p-8">
                     <motion.div
                         key="demo-text"
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="text-4xl md:text-5xl font-bold tracking-[0.1em] font-mono text-center whitespace-nowrap"
+                        className="text-3xl md:text-5xl font-bold tracking-[0.1em] font-mono text-center whitespace-normal md:whitespace-nowrap break-all md:break-normal"
                     >
                         {displayText.split('').map((c, i) => (
                             <span
