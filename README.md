@@ -23,7 +23,7 @@ This repository serves as a comprehensive archive of coursework, assignments, an
 
 | Week | Project | Demo Link |
 |:---|:---|:---|
-| **Week 15** | Daily Movie | [![Final_Project](https://img.shields.io/badge/Final_Project-000000?style=for-the-badge&logo=vercel&logoColor=00ff41)](https://daily-film.vercel.app/) |
+| **Week 15** | Daily Movie | [![Final_Project](https://img.shields.io/badge/Final_Project-000000?style=for-the-badge&logo=vercel&logoColor=00ff41)](https://dailyfilm.vercel.app/) |
 | **Week 13-14** | Art Collection | [![Art_Collection](https://img.shields.io/badge/Art_Collection-000000?style=for-the-badge&logo=react&logoColor=00ff41)](https://week13-14-art-collection.vercel.app/) |
 | **Week 10-12** | Todo v4 | [![Todo_App_v4](https://img.shields.io/badge/Todo_App_v4-000000?style=for-the-badge&logo=react&logoColor=00ff41)](https://week10-12-todo-app-v4.vercel.app/) |
 | **Week 10-12** | Todo v1 | [![Todo_App_v1](https://img.shields.io/badge/Todo_App_v1-000000?style=for-the-badge&logo=react&logoColor=00ff41)](https://week10-12-todo-app-v1.vercel.app/) |

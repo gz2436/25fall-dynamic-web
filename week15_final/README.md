@@ -1,6 +1,6 @@
 # DAILY FILM
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-daily--film.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=00ff41)](https://daily-film.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-dailyfilm.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=00ff41)](https://dailyfilm.vercel.app/)
 [![React 19](https://img.shields.io/badge/React_19-000000?style=for-the-badge&logo=react&logoColor=00ff41)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-000000?style=for-the-badge&logo=vite&logoColor=00cc33)](https://vitejs.dev/)
 
